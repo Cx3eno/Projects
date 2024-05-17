@@ -1,0 +1,55 @@
+html,
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    background: #081b29;
+}
+.charts_orb{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: arial;
+    color: white;
+}
+.charts_orb .orb{padding: 40px;}
+.charts_orb .orb .orb_graphic{position: relative;}
+.charts_orb .orb .orb_graphic .orb_value{
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.charts_orb .orb .orb_label{text-align: center; margin-top: 1em;}
+.charts_orb svg{width: 200px; height: 200px;}
+.charts_orb svg circle{
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 380.16, 365.16;
+    stroke-width: 8px;
+    fill: transparent;
+    r:60;
+    cx:65;
+    cy:99;
+}
+.charts_orb svg circle.fill{stroke: #00030c; stroke-width: 3px;}
+.charts_orb svg circle.progress{
+    stroke: #50dae7;
+    transition: stroke-dashoffset 0.35s;
+    stroke-dashoffset: 214.16;
+    animation: fill 1.5s, forwards;
+    animation-timing-function: linear;
+}
+@keyframes fill{
+    0%{stroke-dashoffset: 314.16;}
+    100%{stroke-dashoffset: 0;}
+}

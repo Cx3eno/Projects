@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="charts_orb">
+        <article class="orb">
+            <div class="orb_graphic">
+                <svg>
+                    <circle class="fill"></circle>
+                    <circle class="progress"></circle>
+                </svg>
+                <div class="orb_value count">360</div>
+            </div>
+            <div class="orb_label">
+                Projects Completed
+            </div>
+        </article>
+
+        <article class="orb">
+            <div class="orb_graphic">
+                <svg>
+                    <circle class="fill"></circle>
+                    <circle class="progress"></circle>
+                </svg>
+                <div class="orb_value count">146</div>
+            </div>
+            <div class="orb_label">
+                Satisfied Clients
+            </div>
+        </article>
+
+        <article class="orb">
+            <div class="orb_graphic">
+                <svg>
+                    <circle class="fill"></circle>
+                    <circle class="progress"></circle>
+                </svg>
+                <div class="orb_value count">47</div>
+            </div>
+            <div class="orb_label">
+                Success Rates
+            </div>
+        </article>
+
+        <article class="orb">
+            <div class="orb_graphic">
+                <svg>
+                    <circle class="fill"></circle>
+                    <circle class="progress"></circle>
+                </svg>
+                <div class="orb_value count">80</div>
+            </div>
+            <div class="orb_label">
+                Years of Experience
+            </div>
+        </article>
+    </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $('.count').each(function(){
+        $(this).prop('Counter', 0).animate({
+            Counter:$(this).text()
+        }, {
+            duration:1500,
+            easing:'linear',
+            step:function(now){
+                $(this).text(Math.ceil(now))
+            }
+        })
+    });
+</script>
+
+</body>
+
+</html>
