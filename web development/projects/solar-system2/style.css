@@ -1,0 +1,63 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp2610854.png');
+    background-size: 300px 300px;
+}
+
+.sun {
+    background: red;
+}
+
+.planet {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.mercury {
+    background: tan;
+    width: 15px;
+    height: 15px;
+}
+
+.venus {
+    background: orange;
+    width: 35px;
+    height: 35px;
+}
+
+.earth {
+    background: blue;
+    width: 25px;
+    height: 25px;
+}
+
+.mars {
+    background: red;
+    width: 20px;
+    height: 20px;
+}
+
+.jupiter {
+    background: yellow;
+    width: 50px;
+    height: 50px;
+}
+
+.saturn {
+    background: green;
+    width: 60px;
+    height: 60px;
+}
+
+.uranus {
+    background: lightblue;
+    width: 40px;
+    height: 40px;
+}
+
+.neptune {
+    background: cyan;
+    width: 40px;
+    height: 40px;
+}
