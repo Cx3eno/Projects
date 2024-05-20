@@ -1,6 +1,6 @@
 # Projects
 
-A curated lists of several constrasting projects that I made in different languages.
+A curated lists of several constrasting projects that are made in different languages.
 The list of languages are:
 
 1. C
