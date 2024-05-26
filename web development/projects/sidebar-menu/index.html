@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidenav">
+            <div class="logo">
+                <img src="images/logo.png">
+                <div class="logo_text">
+                    <h2>Cx3eno</h2>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+
+            <div class="search_bar">
+                <form>
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="search...">
+                </form>
+            </div>
+
+            <div class="menu_text">    
+                <p>MENU</p>
+            </div>
+
+            <div class="icon_items">
+                <ul >
+                    <li class="navActive">
+                        <i class="bx bxs-dashboard"></i>
+                        <a href="#">Dashboard</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-user-circle"></i>
+                        <a href="#">Profile</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-hot"></i>
+                        <a href="#">Trending</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-shopping-bag"></i>
+                        <a href="#">Products</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-bell"></i>
+                        <a href="#">Notification</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-group"></i>
+                        <a href="#">Group</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-user-rectangle"></i>
+                        <a href="#">Profile</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-cog"></i>
+                        <a href="#">Setting</a>
+                    </li>
+
+                    <li class="navActive">
+                        <i class="bx bxs-log-in"></i>
+                        <a href="#">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+<script type="text/javaxcript">
+    const navLiks = document.querySelectorAll(".navActive");
+    navLiks.forEach(links=>{
+        links.addEventListener("click", function(e){
+            e.preventDefault();
+            navLiks.forEach(link => link.classList.remove("active"));
+            links.classList.add("active");
+        })
+    })
+</script>
+
+
+
+</body>
+</html>
